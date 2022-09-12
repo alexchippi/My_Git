@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flexbox-container{
+            background-color: rgb(207, 207, 175);
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: column; */
+
+            /* flex-flow: row wrap; */
+            /* flex flow gives two operations flex-direction: row; and flex-wrap: wrap; */
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: center; */
+            /* flex-wrap: wrap; */
+
+            /* align-items: flex-start;  */
+            /* align item is to make actual size of the box */
+            /* align-items: center; this is the cross axis */
+
+            justify-content: space-evenly;
+            align-items: stretch;
+
+
+            /* height: 400px; */
+        }
+        .flexbox-item{
+            width: 200px;
+            margin: 10px;
+            border: 3px solid #333;
+            
+        }
+        .flexbox-item-1{
+            min-height: 50px;
+            background-color: rgb(79, 79, 240);
+            /* flex-shrink: 0;
+            flex-grow: 1;
+            flex-basis: 0; */
+            flex: 2 0 0;
+            /* align-self: flex-start; */
+            order: 3;
+        }
+        .flexbox-item-2{
+            min-height: 100px;
+            background-color: rgb(18, 228, 140);
+            /* order: 2; */
+        }
+        .flexbox-item-3{
+            min-height: 150px;
+            background-color: rgb(194, 236, 40);
+            order: 1;
+        }
+        .flexbox-item-4{
+            min-height: 200px;
+            background-color: rgb(194, 236, 40);
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox-container">
+        <div class="flexbox-item flexbox-item-1">Item1</div>
+        <div class="flexbox-item flexbox-item-2">Item2</div>
+        <div class="flexbox-item flexbox-item-3">Item3</div>
+        <!-- <div class="flexbox-item flexbox-item-4">Item4</div> -->
+    </div>
+
+</body>
+</html>

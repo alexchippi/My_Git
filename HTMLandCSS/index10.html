@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: x-large;
+        }
+        a:link{
+            color: brown;
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            color: yellow;
+        }
+        a:active{
+            color: aqua;
+        }
+        /* div:hover{
+            background-color: cadetblue;
+        } */
+        span{
+            font-style: italic;
+            font-weight: bold;
+        }
+        #tool-tip{
+            display: none;
+            font-size: small;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            background-color: grey;
+            color: white;
+            border: 1px black solid;
+            padding: 5px;
+            
+        }
+        span:hover + #tool-tip{
+            display: block;
+        }
+        #intro-container::first-line{
+            color: rgb(166, 179, 174);
+        }
+        #intro-container::first-letter{
+            color: red;
+            font-size: xx-large;
+        }
+        #intro-container::before{
+            content: url(/media/image1.jpg);
+        }
+        /* #intro-container::after{
+            content: url(/media/image1.jpg);
+        } */
+    </style>
+</head>
+<body>
+    <a href="https://www.google.in">Click here to visit google</a>
+    <br><br>
+    <a href="https://www.myntra.in">Click here to visit myntra</a>
+    <br><br>
+    <a href="https://www.swiggy.com">Click here to visit swiggy</a>
+    <br><br>
+    <a href="https://www.amazon.com">Click here to visit amazon</a>
+    <br><br>
+
+    <div>
+        Lorem ipsum dolor, sit amet <span>consectetur</span> adipisicing elit. 
+            Eius reiciendis nesciunt archit ecto sapiente aut suscipit. 
+            Corrupti, dignissimos? Placeat officiis eveniet, 
+            at ratione minima culpa ipsum sapiente aliquid, 
+            excepturi similique dolor.
+            <p id="tool-tip">veritatis beatae in mollitia impedit facere eveniet omnis. Repellendus.</p>
+<p id="intro-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam incidunt quaerat cum culpa ullam hic explicabo, sed voluptates dignissimos error laboriosam voluptatibus? Facere similique harum ipsam officia corporis voluptatibus recusandae.</p>
+            
+    </div>
+    
+    
+</body>
+</html>

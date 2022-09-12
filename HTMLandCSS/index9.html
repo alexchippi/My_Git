@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* element element - Descendant Selector */
+            div p{
+                background-color: aqua;
+            }
+            /* element>element - Child Selector */
+            #div1 > p{
+                color: red;
+            }
+            /* element+element - Adjacent sibling Selector */
+            #div1_1A + div{
+                border: 4px red solid;
+            }
+            /* element~element - General sibling Selector */
+            #div1_1A ~ div{
+                border: 4px red solid;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <div id="div1"> <!-- div1 all are  Descendant Selector -->
+            Hello div1 
+            <div id="div1_1A"> <!-- div_1A is child  Selector -->
+                Hello div1_1A
+                <p id="div1_1A_P"> <!-- div_1A_P is Adjacent sibling  Selector -->
+                    Hello div1_1A_P
+                </p>
+            </div>
+            <div id="div1_1B"> <!-- div_1A is child  Selector -->
+                Hello div1_1B
+            </div>
+            <p id="div1_P"> <!-- div_1A is child  Selector -->
+                Hello div1_P
+            </p>
+            <div id="div1_1C">
+                Hello div1_1C
+            </div>
+        </div>
+        <p id="p1"> <!-- p1 is General sibling  Selector -->
+            Hello p1
+        </p>
+    </body>
+</html>
